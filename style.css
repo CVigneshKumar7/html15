@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+html{
+    box-sizing:border-box;
+    scroll-behavior: smooth;
+
+
+}
+body{
+    background-color: orangered;
+    font-family: "Space Grotesk", sans-serif;
+    text-align: center;
+    color:aquamarine;
+    margin:0;
+    padding:0;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.header-content,
+    .maincontent{
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 0 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        gap: 3rem;
+        flex-direction: column;
+    }
+    .header-content{
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    nav a{
+        margin-left: 20px;
+        color: yellowgreen
+        
+        
+    }
+    nav a:hover{
+        border-bottom: 2px solid yellowgreen;
+
+    }
+/* home */
+#home{
+    padding: 10px;
+}
+.profile_info{
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+   justify-content: center;
+
+}
+.text-info{
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+.text-info h1{
+    border-bottom: 2px solid rgb(203, 71, 24);
+
+
+}
+.user-bio{
+    border-bottom: 1px solid black ;
+}
+.quote-box{
+    padding: 16px;
+    background-color: red;
+    border-radius: 3px;
+
+}
+.project-grid{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 12px;
+
+}
+.project{
+    border: 1px solid maroon;
+    border-radius: 35px;
+    padding: 10px;
+}
+.project h3,
+.project p{
+    text-align: left;
+
+}
+.project p{
+    font-size: 12px;
+}
+.project-languages{
+    display: flex;
+    gap: 8px;
+    font-weight: lighter;
+    font-size: 12px;
+    color:yellow
+}
+.more-projects{
+    margin-top: 10px;
+    font-weight: 800;
+    width: 95%;
+    color: purple;
+    border : 1px solid red;
+    border-radius: 35px;
+    padding: 16px;
+}
+/*media screen */
+@media screen and {min-width: 1025px;
+    .project-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+}
+/*footer css */
+footer{
+    padding: 50px 0 200px;
+}
